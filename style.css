@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+#body-intro{background-color:#A9E2FF; overflow:hidden; animation:color-animation 12s steps(1) infinite }
+.press{animation:color-animation 0.2s steps(1) infinite}
+.menu-select {animation:select 0.2s steps(1) infinite}
+
+.logo-intro {margin-bottom: 16%}
+.menu-intro {
+	padding: 20px;
+	 -webkit-filter: drop-shadow(-4px 4px hsla(0,0%,0%,0.20) );
+    filter:         drop-shadow(-4px 4px hsla(0,0%,0%,0.20)); 
+}
+.menu-sdw{box-shadow: -10px 10px}
+#play.menu-intro:hover{width:40%}
+#bonus.menu-intro:hover{width:45%}
+#settings.menu-intro:hover{width:60%}
+.centervert {
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%)
+}
+.escond {visibility:hidden}
+
+@keyframes color-animation {
+    0% {
+       background-color: #f74231;
+    }
+	
+    25% {
+       background-color: #fbd74b;
+    } 
+    50% {
+       background-color: #2883f7;
+    } 
+    75% {
+       background-color:#a1fb4f
+    }
+	100% {
+       background-color:#a1fb4f
+    } 
+ }
+@keyframes select {
+    0% {
+       width: 40%;
+    }
+	33% {
+       width: 50%;
+    }
+	66% {
+       width: 50%;
+    }
+	100% {
+       width: 40%;
+    } 
+ }
+#logo-intro {
+	opacity: 0
+}
+
+h1 {
+font-family: "proxima-nova",sans-serif;
+font-style: normal;
+font-weight: 700;  }
+
+h1 {
+	text-align: center;
+	color: #fFF;
+	font-size: 1.4em
+}
+
+
