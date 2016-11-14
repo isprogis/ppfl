@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRESS PLAY FOR LIFE!</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<script type="text/javascript" src="js/jqu2B0.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+						$('#logo-intro').animate({opacity:100}, 15000);
+
+			setTimeout(function(){
+				$("#play").removeClass("escond");
+
+			}, 850);
+			
+			setTimeout(function(){
+				$("#bonus").removeClass("escond");
+
+			}, 1000);
+			
+			setTimeout(function(){
+				$("#settings").removeClass("escond");
+
+			}, 1150);
+		 
+			$('.menu-intro').click(function() {
+       $('body').addClass('press');
+    });
+			
+			$('#play').click(function() {
+       setTimeout(function(){window.location.replace("play/")}, 700);
+	   $('#play').addClass('menu-select');
+
+    });
+			$('#bonus').click(function() {
+      setTimeout(function(){window.location.replace("bonus/")}, 700);
+			$('#bonus').addClass('menu-select');
+
+    });
+			$('#settings').click(function() {
+       setTimeout(function(){window.location.replace("settings/")}, 700);
+			$('#settings').addClass('menu-select');
+
+    });
+		});
+	</script>
+
+
+<body id="body-intro">
+
+<div class="container-fluid centervert">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <img id="logo-intro" src="img/color.png" width="40%" class="logo-intro center-block">
+    </div>
+  </div>
+
+
+  <div class="row">
+	<div class="col-sm-4"> <img id="play" onClick="pressPlay" src="img/intro/play.png" class="center-block menu-intro escond" width="35%" s> </div>
+    <div class="col-sm-4"> <img id="bonus" src="img/intro/bonus.png" class="center-block menu-intro escond" width="40%"> </div>
+    <div class="col-sm-4"> <img id="settings" src="img/intro/settings.png" class="center-block menu-intro escond" width="55%"> </div>
+  </div>
+ 
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
